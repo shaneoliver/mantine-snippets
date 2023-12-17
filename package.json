@@ -1,0 +1,221 @@
+{
+  "name": "mantine-snippets",
+  "version": "0.0.1",
+  "displayName": "Mantine Snippets",
+  "description": "Code snippets for Mantine",
+  "icon": "icon.png",
+  "publisher": "shaneoliver",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Mantine Snippets",
+        "properties": {
+          "mantine-snippets.formControlMode": {
+            "type": "string",
+            "default": "controlled",
+            "markdownDescription": "Whether to use controlled or uncontrolled inputs and other form controls in snippets",
+            "enum": [
+              "controlled",
+              "uncontrolled"
+            ],
+            "enumDescriptions": [
+              "Includes value and onChange properties in form controls",
+              "Includes defaultValue property in form controls"
+            ]
+          },
+          "mantine-snippets.showNotesOnStartup": {
+            "type": "boolean",
+            "default": true,
+            "markdownDescription": "Whether to show release notes on startup"
+          }
+        }
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.mantineAccordion",
+        "title": "Insert <Accordion>",
+        "category": "Mantine Snippets"
+      }
+    ]
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "scripts": {
+    "lint": "eslint $npm_package_config_lint",
+    "lint:fix": "eslint $npm_package_config_lint",
+    "lint:watch": "esw --watch $npm_package_config_lint",
+    "prettier": "prettier --write .babelrc.js *.json *.md 'src/**/*.{js,ts,tsx}'",
+    "prettier:check": "prettier --list-different .babelrc.js *.json *.md 'src/**/*.{js,ts,tsx}'",
+    "tsc": "tsc --noEmit",
+    "clean": "rimraf out",
+    "build": "babel-node --extensions \".js,.ts,.tsx\" scripts/buildReadme.ts && prettier --write README.md && babel src --out-dir out --extensions \".js,.ts,.tsx\"",
+    "build:watch": "nodemon -e js,ts,json --watch src --watch .babelrc.js --exec \"(babel-node --extensions '.js,.ts,.tsx' scripts/buildReadme.ts && babel src --out-dir out --extensions '.js,.ts,.tsx'; exit 0)\"",
+    "pretest": "npm run build",
+    "test": "rimraf .nyc_output; node ./out/test/runTest.js; nyc report; nyc report --reporter=lcov",
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov; codecov",
+    "vscode:prepublish": "npm run clean && npm run lint && npm run build",
+    "open:coverage": "open coverage/lcov-report/index.html",
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "verifyConditions": [
+      "semantic-release-vsce",
+      "@semantic-release/github"
+    ],
+    "prepare": {
+      "path": "semantic-release-vsce",
+      "packageVsix": "mantine-snippets.vsix"
+    },
+    "publish": [
+      "semantic-release-vsce",
+      {
+        "path": "@semantic-release/github",
+        "assets": "mantine-snippets.vsix"
+      }
+    ]
+  },
+  "config": {
+    "lint": "--cache --ext .js,.ts,.tsx src",
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "src/**/*.spec.ts",
+      "src/**/*.spec.tsx"
+    ],
+    "require": [
+      "@babel/register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaneoliver/mantine-snippets.git"
+  },
+  "keywords": [
+    "vscode",
+    "mantine",
+    "snippets"
+  ],
+  "author": "Shane Oliver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaneoliver/mantine-snippets/issues"
+  },
+  "homepage": "https://github.com/shaneoliver/mantine-snippets#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.12.7",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/fs-extra": "^8.0.1",
+    "@types/glob": "^7.1.1",
+    "@types/jscodeshift": "^0.6.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^16.9.6",
+    "@types/prettier": "^1.19.0",
+    "@types/shallowequal": "^1.1.1",
+    "@types/vscode": "^1.51.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "chai": "^4.2.0",
+    "codecov": "^3.8.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-mantine": "3.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "markdown-escape": "^1.0.2",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.2.3"
+  },
+  "renovate": {
+    "extends": [
+      ":separateMajorReleases",
+      ":combinePatchMinorReleases",
+      ":ignoreUnstable",
+      ":prImmediately",
+      ":renovatePrefix",
+      ":updateNotScheduled",
+      ":preserveSemverRanges",
+      ":semanticPrefixFixDepsChoreOthers",
+      ":automergeDisabled",
+      "group:monorepos"
+    ],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "@mantine/core": "^7.3.2",
+    "@mantine/dates": "^7.3.2",
+    "@mantine/form": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+    "@types/react": "^18.2.45",
+    "babel-parse-wild-code": "^1.1.1",
+    "dayjs": "^1.11.10",
+    "jscodeshift": "^0.7.0",
+    "react": "^18.2.0",
+    "read-pkg-up": "^7.0.0",
+    "require-glob": "^3.2.0",
+    "semantic-release": "^22.0.12",
+    "semantic-release-vsce": "^5.6.4",
+    "shallowequal": "^1.1.0"
+  }
+}
