@@ -45,6 +45,101 @@
         "command": "extension.mantineAccordion",
         "title": "Insert <Accordion>",
         "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineAspectRatio",
+        "title": "Insert <AspectRatio>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineCenter",
+        "title": "Insert <Center>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineCenterInline",
+        "title": "Insert <Center>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineContainer",
+        "title": "Insert <Container>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineContainerFluid",
+        "title": "Insert <Container>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineFlex",
+        "title": "Insert <Flex>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineFlexRowBetween",
+        "title": "Insert <Flex>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineFlexRowEnd",
+        "title": "Insert <Flex>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGrid",
+        "title": "Insert <Grid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGridAllProps",
+        "title": "Insert <Grid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGridCol",
+        "title": "Insert <Grid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGridColResponsive",
+        "title": "Insert <Grid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGroup",
+        "title": "Insert <Group>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineGroupGrow",
+        "title": "Insert <Group>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineSimpleGrid",
+        "title": "Insert <SimpleGrid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineSimpleGridResponsive",
+        "title": "Insert <SimpleGrid>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineSpaceHorizontal",
+        "title": "Insert <Space>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineSpaceVertical",
+        "title": "Insert <Space>",
+        "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineStack",
+        "title": "Insert <Stack>",
+        "category": "Mantine Snippets"
       }
     ]
   },

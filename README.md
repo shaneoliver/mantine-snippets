@@ -38,16 +38,213 @@ It should get you most of the way there, as the API on components is quite simil
 <!-- snippets -->
 
 - [`mantineAccordion`: &lt;Accordion&gt;](#mantineaccordion-accordion)
+- [`mantineAspectRatio`: &lt;AspectRatio&gt;](#mantineaspectratio-aspectratio)
+- [`mantineCenter`: &lt;Center&gt;](#mantinecenter-center)
+- [`mantineCenterInline`: &lt;Center&gt;](#mantinecenterinline-center)
+- [`mantineContainer`: &lt;Container&gt;](#mantinecontainer-container)
+- [`mantineContainerFluid`: &lt;Container&gt;](#mantinecontainerfluid-container)
+- [`mantineFlex`: &lt;Flex&gt;](#mantineflex-flex)
+- [`mantineFlexRowBetween`: &lt;Flex&gt;](#mantineflexrowbetween-flex)
+- [`mantineFlexRowEnd`: &lt;Flex&gt;](#mantineflexrowend-flex)
+- [`mantineGrid`: &lt;Grid&gt;](#mantinegrid-grid)
+- [`mantineGridAllProps`: &lt;Grid&gt;](#mantinegridallprops-grid)
+- [`mantineGridCol`: &lt;Grid&gt;](#mantinegridcol-grid)
+- [`mantineGridColResponsive`: &lt;Grid&gt;](#mantinegridcolresponsive-grid)
+- [`mantineGroup`: &lt;Group&gt;](#mantinegroup-group)
+- [`mantineGroupGrow`: &lt;Group&gt;](#mantinegroupgrow-group)
+- [`mantineSimpleGrid`: &lt;SimpleGrid&gt;](#mantinesimplegrid-simplegrid)
+- [`mantineSimpleGridResponsive`: &lt;SimpleGrid&gt;](#mantinesimplegridresponsive-simplegrid)
+- [`mantineSpaceHorizontal`: &lt;Space&gt;](#mantinespacehorizontal-space)
+- [`mantineSpaceVertical`: &lt;Space&gt;](#mantinespacevertical-space)
+- [`mantineStack`: &lt;Stack&gt;](#mantinestack-stack)
 
 ### `mantineAccordion`: &lt;Accordion&gt;
 
 ```
 <Accordion defaultValue={$1}>
   <AccordionItem value={$2}>
-    <AccordionControl />
-    <AccordionPanel />
+    <AccordionControl>$3</AccordionControl>
+    <AccordionPanel>$4</AccordionPanel>
   </AccordionItem>
 </Accordion>
+```
+
+### `mantineAspectRatio`: &lt;AspectRatio&gt;
+
+```
+<AspectRatio ratio={$1} maw={$2}$3>$4</AspectRatio>
+```
+
+### `mantineCenter`: &lt;Center&gt;
+
+```
+<Center${1:
+  maw={${2:400}\}}${3:
+  h={${4:100}\}}${5:
+  bg="var(--mantine-color-gray-light)"}
+>
+  $6
+</Center>
+```
+
+### `mantineCenterInline`: &lt;Center&gt;
+
+```
+<Center inline$1>$2</Center>
+```
+
+### `mantineContainer`: &lt;Container&gt;
+
+```
+<Container size="${1|md,xs,sm,lg,xl|}"$2>$3</Container>
+```
+
+### `mantineContainerFluid`: &lt;Container&gt;
+
+```
+<Container fluid$1>$2</Container>
+```
+
+### `mantineFlex`: &lt;Flex&gt;
+
+```
+<Flex${1:
+  justify="${2|space-around,space-between,space-evenly,stretch,center,end,flex-end,flex-start,start,left,normal,right,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${3:
+  align="${4|center,end,flex-end,flex-start,self-end,self-start,start,baseline,normal,stretch,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${5:
+  direction="${6|column,column-reverse,row,row-reverse,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${7:
+  wrap="${8|nowrap,wrap,wrap-reverse,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${9:
+  rowGap="${10|md,xs,sm,lg,xl|}"}${11:
+  columnGap="${12|md,xs,sm,lg,xl|}"}${13:
+  gap="${14|md,xs,sm,lg,xl|}"}
+  $15
+>
+  $16
+</Flex>
+```
+
+### `mantineFlexRowBetween`: &lt;Flex&gt;
+
+```
+<Flex justify="space-between"$1>$2</Flex>
+```
+
+### `mantineFlexRowEnd`: &lt;Flex&gt;
+
+```
+<Flex justify="flex-end"$1>$2</Flex>
+```
+
+### `mantineGrid`: &lt;Grid&gt;
+
+```
+<Grid cols={${1:12}} gutter="${2|md,xs,sm,lg,xl|}">
+  $3
+</Grid>
+```
+
+### `mantineGridAllProps`: &lt;Grid&gt;
+
+```
+<Grid
+  cols={${1:12}}
+  gutter="${2|md,xs,sm,lg,xl|}"${3:
+  align="${4|center,end,flex-end,flex-start,self-end,self-start,start,baseline,normal,stretch,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${5:
+  justify="${6|space-around,space-between,space-evenly,stretch,center,end,flex-end,flex-start,start,left,normal,right,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${7:
+  grow}${8:
+  overflow="${9|-moz-hidden-unscrollable,auto,clip,hidden,scroll,visible,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}
+>
+  $10
+</Grid>
+```
+
+### `mantineGridCol`: &lt;Grid&gt;
+
+```
+<GridCol span={${1:12}}$2>
+  $3
+</GridCol>
+```
+
+### `mantineGridColResponsive`: &lt;Grid&gt;
+
+```
+<GridCol span={{ base: ${1:12}, $2: $3 }}$4>
+  $5
+</GridCol>
+```
+
+### `mantineGroup`: &lt;Group&gt;
+
+```
+<Group
+  justify="${1|space-around,space-between,space-evenly,stretch,center,end,flex-end,flex-start,start,left,normal,right,-moz-initial,inherit,initial,revert,revert-layer,unset|}"${2:
+  gap="${3|md,xs,sm,lg,xl|}"}
+  $4
+>
+  $5
+</Group>
+```
+
+### `mantineGroupGrow`: &lt;Group&gt;
+
+```
+<Group
+  justify="${1|space-around,space-between,space-evenly,stretch,center,end,flex-end,flex-start,start,left,normal,right,-moz-initial,inherit,initial,revert,revert-layer,unset|}"${2:
+  gap="${3|md,xs,sm,lg,xl|}"}
+  grow
+  $4
+>
+  $5
+</Group>
+```
+
+### `mantineSimpleGrid`: &lt;SimpleGrid&gt;
+
+```
+<SimpleGrid
+  cols={${1:12}}${2:
+  spacing="${3|md,xs,sm,lg,xl|}"}${4:
+  verticalSpacing="${5|md,xs,sm,lg,xl|}"}
+>
+  $6
+</SimpleGrid>
+```
+
+### `mantineSimpleGridResponsive`: &lt;SimpleGrid&gt;
+
+```
+<SimpleGrid
+  cols={{ base: ${1:12}, $2: $3 }}${4:
+  spacing={{ base: ${5|md,xs,sm,lg,xl|}, $6: $7 \}\}}${8:
+  verticalSpacing={{ base: ${9|md,xs,sm,lg,xl|}, $10: $11 \}\}}
+>
+  $12
+</SimpleGrid>
+```
+
+### `mantineSpaceHorizontal`: &lt;Space&gt;
+
+```
+<Space w="${1|md,xs,sm,lg,xl|}" />
+```
+
+### `mantineSpaceVertical`: &lt;Space&gt;
+
+```
+<Space h="${1|md,xs,sm,lg,xl|}" />
+```
+
+### `mantineStack`: &lt;Stack&gt;
+
+```
+<Stack${1:
+  justify="${2|space-around,space-between,space-evenly,stretch,center,end,flex-end,flex-start,start,left,normal,right,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${3:
+  align="${4|center,end,flex-end,flex-start,self-end,self-start,start,baseline,normal,stretch,-moz-initial,inherit,initial,revert,revert-layer,unset|}"}${5:
+  gap="${6|md,xs,sm,lg,xl|}"}
+  $7
+>
+  $8
+</Stack>
 ```
 
 <!-- snippetsend -->

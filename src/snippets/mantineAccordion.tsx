@@ -11,8 +11,8 @@ export const body = ({
 }: SnippetOptions): React.ReactElement<any> => (
   <Accordion defaultValue={$}>
     <AccordionItem value={$}>
-      <AccordionControl></AccordionControl>
-      <AccordionPanel></AccordionPanel>
+      <AccordionControl>$</AccordionControl>
+      <AccordionPanel>$</AccordionPanel>
     </AccordionItem>
   </Accordion>
 )
