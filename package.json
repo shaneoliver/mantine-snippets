@@ -140,6 +140,11 @@
         "command": "extension.mantineStack",
         "title": "Insert <Stack>",
         "category": "Mantine Snippets"
+      },
+      {
+        "command": "extension.mantineActionIcon",
+        "title": "Insert <ActionIcon>",
+        "category": "Mantine Snippets"
       }
     ]
   },

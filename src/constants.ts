@@ -1,5 +1,8 @@
 export const sizes = ['md', 'xs', 'sm', 'lg', 'xl']
 
+export const buttonVariants = ['default', 'filled', 'light', 'outline', 'subtle', 'transparent', 'white']
+
+export const colors = ['dark', 'gray', 'red', 'pink', 'grape', 'violet', 'indigo', 'blue', 'cyan', 'green', 'lime', 'yellow', 'orange', 'teal']
 export const globals = [
   '-moz-initial',
   'inherit',
