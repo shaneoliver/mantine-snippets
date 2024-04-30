@@ -9,3 +9,6 @@ out
 /*.d.ts
 !/.babelrc.js
 *.vsix
+/.vscode
+.DS_Store
+vsc-extension-quickstart.md

@@ -1,0 +1,114 @@
+{
+  "Mantine App Shell": {
+    "prefix": "mtAppShell",
+    "body": [
+      "<AppShell",
+      "  header={{ height: 60 }}",
+      "  navbar={{",
+      "    width: 300,",
+      "    breakpoint: '${1|sm,xs,md,lg,xl|}',",
+      "    collapsed: { mobile: !opened },",
+      "  }}",
+      "  padding=\"${2|md,xs,sm,lg,xl|}\"",
+      "  >",
+      "  <AppShell.Header>",
+      "    <Burger",
+      "      opened={opened}",
+      "      onClick={toggle}",
+      "      hiddenFrom=\"sm\"",
+      "      size=\"sm\"",
+      "    />",
+      "    <div>Logo</div>",
+      "  </AppShell.Header>",
+      "",
+      "  <AppShell.Navbar p=\"md\">${3:Navbar}</AppShell.Navbar>",
+      "",
+      "  <AppShell.Main>$0</AppShell.Main>",
+      "</AppShell>"
+    ],
+    "description": "Mantine App Shell"
+  },
+  "Mantine Aspect Ratio": {
+    "prefix": "mtAspectRatio",
+    "body": [
+      "<AspectRatio ratio={${3:1080 / 720}} maw={${4:300}} mx=\"auto\">",
+      "  <img",
+      "    src=\"$1\"",
+      "    alt=\"$2\"",
+      "  />",
+      "</AspectRatio>"
+    ],
+    "description": "Mantine Aspect Ratio"
+  },
+  "Mantine Center": {
+    "prefix": "mtCenter",
+    "body": [
+      "<Center maw={${1:400}} h={${2:100}} $3>",
+      "  $0",
+      "</Center>"
+    ],
+    "description": "Mantine Center"
+  },
+  "Mantine Container": {
+    "prefix": "mtContainer",
+    "body": [
+      "<Container size=\"${1|xl,xs,sm,md,lg|}\" $2>",
+      "  $0",
+      "</Container>"
+    ],
+    "description": "Mantine Container"
+  },
+  "Mantine Flex": {
+    "prefix": "mtFlex",
+    "body": [
+      "<Flex gap=\"${1|md,xs,sm,lg,xl|}\" justify=\"${2|flex-start,center,flex-end|}\" align=\"${3|flex-start,center,flex-end|}\" direction=\"${4|row,column,row-reverse,column-reverse|}\" wrap=\"${5|nowrap,wrap,wrap-reverse|}\">",
+      "  $0",
+      "</Flex>"
+    ],
+    "description": "Mantine Flex"
+  },
+  "Mantine Grid": {
+    "prefix": "mtGrid",
+    "body": [
+      "<Grid ${1:grow}>",
+      "  <Grid.Col span={${2:12}}>$0</Grid.Col>",
+      "</Grid>"
+    ],
+    "description": "Mantine Grid"
+  },
+  "Mantine Group": {
+    "prefix": "mtGroup",
+    "body": [
+      "<Group ${1:justify=\"${2|flex-start,center,flex-end|}\"} ${3:gap=\"${4|md,xs,sm,lg,xl|}\"} ${5:grow}>",
+      "  $0",
+      "</Group>"
+    ],
+    "description": "Mantine Group"
+  },
+  "Mantine Simple Grid": {
+    "prefix": "mtSimpleGrid",
+    "body": [
+      "<SimpleGrid cols={${1:2}} spacing=\"${2|md,xs,sm,lg,xl|}\" verticalSpacing=\"${3|md,xs,sm,lg,xl|}\">",
+      "  $0",
+      "</SimpleGrid>"
+    ],
+    "description": "Mantine Simple Grid"
+  },
+  "Mantine Space": {
+    "prefix": "mtSpace",
+    "body": [
+      "<Space ${1:h=\"${2|md,xs,sm,lg,xl|}\"} ${3:h=\"${4|md,xs,sm,lg,xl|}\"}>",
+      "  $0",
+      "</Space>"
+    ],
+    "description": "Mantine Space"
+  },
+  "Mantine Stack": {
+    "prefix": "mtStack",
+    "body": [
+      "<Stack gap=\"${1|md,xs,sm,lg,xl|}\" align=\"${2|stretch,center,flex-start,flex-end|}\" justify=\"${3|center,flex-start,flex-end,space-between,space-around|}\">",
+      "  $0",
+      "</Stack>"
+    ],
+  }
+}

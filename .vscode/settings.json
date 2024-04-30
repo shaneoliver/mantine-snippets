@@ -1,12 +1,26 @@
-// Place your settings in this file to overwrite default and user settings.
 {
-  "files.exclude": {
-    "out": false // set this to true to hide the "out" folder with the compiled JS files
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": [
+  ], // Add custom words to cSpell
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "search.exclude": {
-    "out": true // set this to false to include "out" folder in search results
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-  "typescript.tsc.autoDetect": "off",
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "colorize.languages": ["javascriptreact", "typescriptreact", "typescript", "javascript", "css", "scss"],
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }

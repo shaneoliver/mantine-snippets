@@ -1,8 +1,4 @@
-**
-!node_modules
-!out
-!LICENSE.md
-!package.json
-!README.md
-!yarn.lock
-!icon.png
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md
