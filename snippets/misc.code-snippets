@@ -1,3 +1,70 @@
 {
-    
+  "Mantine Box": {
+    "prefix": "mtBox",
+    "body": [
+      "<Box $1>",
+      "  $0",
+      "</Box>"
+    ],
+    "description": "Mantine Box"
+  },
+  "Mantine Collapse": {
+    "prefix": "mtCollapse",
+    "body": [
+      "<Collapse in={${1:opened}} $2>",
+      "  $0",
+      "</Collapse>"
+    ],
+    "description": "Mantine Collapse"
+  },
+  "Mantine Divider": {
+    "prefix": "mtDivider",
+    "body": [
+      "<Divider $0 />",
+    ],
+    "description": "Mantine Divider"
+  },
+  "Mantine FocusTrap": {
+    "prefix": "mtFocusTrap",
+    "body": [
+      "<FocusTrap in={${1:active}} $2>",
+      "  $0",
+      "</FocusTrap>",
+    ],
+    "description": "Mantine FocusTrap"
+  },
+  "Mantine Paper": {
+    "prefix": "mtPaper",
+    "body": [
+      "<Paper ${1:shadow=\"${2|xs,sm,md,lg,xl|}\"} ${3:radius=\"${4|sm,xs,md,lg,xl|}\"} ${5:border}>",
+      "  $0",
+      "</Paper>",
+    ],
+    "description": "Mantine Paper"
+  },
+  "Mantine Portal": {
+    "prefix": "mtPortal",
+    "body": [
+      "<Portal ${1:target=\"${2:#portal-container}\"}>",
+      "  $0",
+      "</Portal>",
+    ],
+    "description": "Mantine Portal"
+  },
+  "Mantine ScrollArea": {
+    "prefix": "mtScrollArea",
+    "body": [
+      "<ScrollArea ${1:type=\"${2|hover,auto,always,scroll,never|}\"} ${3:offsetScrollbars} $4>",
+      "  $0",
+      "</ScrollArea>",
+    ],
+    "description": "Mantine ScrollArea"
+  },
+  "Mantine VisuallyHidden": {
+    "prefix": "mtVisuallyHidden",
+    "body": [
+      "<VisuallyHidden>$0</VisuallyHidden>",
+    ],
+    "description": "Mantine VisuallyHidden"
+  }
 }
