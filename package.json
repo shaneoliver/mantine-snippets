@@ -2,7 +2,7 @@
   "name": "mantine-snippets",
   "displayName": "Mantine Snippets",
   "description": "Code snippets for Mantine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "shaneoliver",
   "engines": {
     "vscode": "^1.88.0"
