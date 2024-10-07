@@ -1,3 +1,26 @@
 {
-    
+  "Mantine Blockquote": {
+    "prefix": "mtBlockquote",
+    "body": [
+      "<Blockquote color=\"${1|blue,gray,red,green,yellow,cyan,grape,indigo,lime,orange,pink,teal,violet|}\" cite=\"${2:– Forrest Gump}\" icon={<Icon${3:InfoCircle} />} mt=\"${4|xs,sm,md,lg,xl|}\">",
+      "  ${5:Life is like an npm install – you never know what you are going to get.}",
+      "</Blockquote>"
+    ],
+    "description": "Mantine Blockquote"
+  },
+  "Mantine Code": {
+    "prefix": "mtCode",
+    "body": ["<Code>$1</Code>"],
+    "description": "Mantine Blockquote"
+  },
+  "Mantine Code Block": {
+    "prefix": "mtCodeBlock",
+    "body": ["<Code block>$1</Code>"],
+    "description": "Mantine Blockquote"
+  },
+  "Mantine Hightlight": {
+    "prefix": "mtHighlight",
+    "body": ["<Highlight highlight={${1}}>$2</Highlight>"],
+    "description": "Mantine Blockquote"
+  }
 }
