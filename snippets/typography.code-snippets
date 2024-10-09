@@ -22,5 +22,130 @@
     "prefix": "mtHighlight",
     "body": ["<Highlight highlight={${1}}>$2</Highlight>"],
     "description": "Mantine Blockquote"
+  },
+  "Mantine Hightlight Many": {
+    "prefix": "mtHighlightMany",
+    "body": ["<Highlight highlight={[${1}]}>$2</Highlight>"],
+    "description": "Mantine Blockquote"
+  },
+  "Mantine List": {
+    "prefix": "mtList",
+    "body": [
+      "<List type=\"${1|ordered,unordered|}\">",
+      "  <List.Item>$2</List.Item>",
+      "</List>"
+    ],
+    "description": "Mantine List"
+  },
+  "Mantine Mark": {
+    "prefix": "mtMark",
+    "body": [
+      "<Mark color=\"${1|blue,gray,red,green,yellow,cyan,grape,indigo,lime,orange,pink,teal,violet|}\">$2</Mark>"
+    ],
+    "description": "Mantine Mark"
+  }
+  "Mantine Text Extra Small": {
+    "prefix": "mtTextXs",
+    "body": ["<Text size=\"xs\">${1:Extra small text}</Text>"],
+    "description": "Mantine Text Extra Small"
+  },
+  "Mantine Text Small": {
+    "prefix": "mtTextSm",
+    "body": ["<Text size=\"sm\">${1:Small text}</Text>"],
+    "description": "Mantine Text Small"
+  },
+  "Mantine Text Default": {
+    "prefix": "mtTextMd",
+    "body": ["<Text size=\"md\">${1:Default text}</Text>"],
+    "description": "Mantine Text Default"
+  },
+  "Mantine Text Large": {
+    "prefix": "mtTextLg",
+    "body": ["<Text size=\"lg\">${1:Large text}</Text>"],
+    "description": "Mantine Text Large"
+  },
+  "Mantine Text Extra Large": {
+    "prefix": "mtTextXl",
+    "body": ["<Text size=\"xl\">${1:Extra large text}</Text>"],
+    "description": "Mantine Text Extra Large"
+  },
+  "Mantine Text Semibold": {
+    "prefix": "mtTextSemibold",
+    "body": ["<Text fw={500}>${1:Semibold}</Text>"],
+    "description": "Mantine Text Semibold"
+  },
+  "Mantine Text Bold": {
+    "prefix": "mtTextBold",
+    "body": ["<Text fw={700}>${1:Bold}</Text>"],
+    "description": "Mantine Text Bold"
+  },
+  "Mantine Text Italic": {
+    "prefix": "mtTextItalic",
+    "body": ["<Text fs=\"italic\">${1:Italic}</Text>"],
+    "description": "Mantine Text Italic"
+  },
+  "Mantine Text Underline": {
+    "prefix": "mtTextUnderline",
+    "body": ["<Text td=\"underline\">${1:Underlined}</Text>"],
+    "description": "Mantine Text Underline"
+  },
+  "Mantine Text Strikethrough": {
+    "prefix": "mtTextStrike",
+    "body": ["<Text td=\"line-through\">${1:Strikethrough}</Text>"],
+    "description": "Mantine Text Strikethrough"
+  },
+  "Mantine Text Dimmed": {
+    "prefix": "mtTextDimmed",
+    "body": ["<Text c=\"dimmed\">${1:Dimmed text}</Text>"],
+    "description": "Mantine Text Dimmed"
+  },
+  "Mantine Text Colored": {
+    "prefix": "mtTextColor",
+    "body": ["<Text c=\"${1:blue}\">${2:Colored text}</Text>"],
+    "description": "Mantine Text Colored"
+  },
+  "Mantine Text Shade": {
+    "prefix": "mtTextShade",
+    "body": ["<Text c=\"${1:teal}.${2:4}\">${3:Shaded text}</Text>"],
+    "description": "Mantine Text with Color Shade"
+  },
+  "Mantine Text Uppercase": {
+    "prefix": "mtTextUppercase",
+    "body": ["<Text tt=\"uppercase\">${1:Uppercase}</Text>"],
+    "description": "Mantine Text Uppercase"
+  },
+  "Mantine Text Capitalize": {
+    "prefix": "mtTextCapitalize",
+    "body": ["<Text tt=\"capitalize\">${1:capitalized text}</Text>"],
+    "description": "Mantine Text Capitalize"
+  },
+  "Mantine Text Center": {
+    "prefix": "mtTextCenter",
+    "body": ["<Text ta=\"center\">${1:Aligned to center}</Text>"],
+    "description": "Mantine Text Centered"
+  },
+  "Mantine Text Right": {
+    "prefix": "mtTextRight",
+    "body": ["<Text ta=\"right\">${1:Aligned to right}</Text>"],
+    "description": "Mantine Text Right Aligned"
+  },
+  "Mantine Text Gradient": {
+    "prefix": "mtTextGradient",
+    "body": [
+      "<Text",
+      "  size=\"${5|xl,lg,md,sm,xs|}\"",
+      "  fw={${4|900,700,500,400,300,200,100|}}",
+      "  variant=\"gradient\"",
+      "  gradient={{ from: '${1:blue}', to: '${2:cyan}', deg: ${3:90} }}",
+      ">",
+      "  ${6:Gradient Text}",
+      "</Text>"
+    ],
+    "description": "Mantine Text Gradient"
+  },
+  "Mantine Text Truncate": {
+    "prefix": "mtTextTruncate",
+    "body": ["<Text truncate=\"${1|end,start|}\">$2</Text>"],
+    "description": "Mantine Text Truncate"
   }
 }
