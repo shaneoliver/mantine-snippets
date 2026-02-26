@@ -1,3 +1,36 @@
 {
-    
+  "Mantine Combobox": {
+    "prefix": "mtCombobox",
+    "body": [
+      "<Combobox store={${1:combobox}} onOptionSubmit={${2:handleOptionSubmit}}>",
+      "  <Combobox.Target>",
+      "    ${3:Target input or button}",
+      "  </Combobox.Target>",
+      "  <Combobox.Dropdown>",
+      "    <Combobox.Options>${4:Options}</Combobox.Options>",
+      "  </Combobox.Dropdown>",
+      "</Combobox>"
+    ],
+    "description": "Mantine Combobox – base for custom select/autocomplete"
+  },
+  "Mantine Combobox Option": {
+    "prefix": "mtComboboxOption",
+    "body": [
+      "<Combobox.Option value=\"${1:value}\">${2:Label}</Combobox.Option>"
+    ],
+    "description": "Mantine Combobox.Option"
+  },
+  "Mantine Combobox Options": {
+    "prefix": "mtComboboxOptions",
+    "body": [
+      "<Combobox.Options>",
+      "  ${1:options.map((item) => (",
+      "    <Combobox.Option key={item.value} value={item.value}>",
+      "      {item.label}",
+      "    </Combobox.Option>",
+      "  ))}",
+      "</Combobox.Options>"
+    ],
+    "description": "Mantine Combobox.Options with map"
+  }
 }

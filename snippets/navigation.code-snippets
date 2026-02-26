@@ -1,3 +1,81 @@
 {
-    
+  "Mantine Breadcrumbs": {
+    "prefix": "mtBreadcrumbs",
+    "body": [
+      "<Breadcrumbs${1: separator=\"→\" separatorMargin=\"md\"}>",
+      "  ${2:items}",
+      "</Breadcrumbs>"
+    ],
+    "description": "Mantine Breadcrumbs"
+  },
+  "Mantine Burger": {
+    "prefix": "mtBurger",
+    "body": [
+      "<Burger opened={${1:opened}} onClick={${2:toggle}} aria-label=\"${3:Toggle navigation}\" />"
+    ],
+    "description": "Mantine Burger"
+  },
+  "Mantine NavLink": {
+    "prefix": "mtNavLink",
+    "body": [
+      "<NavLink",
+      "  label=\"${1:Label}\"",
+      "  leftSection={${2}}",
+      "  ${3:active}",
+      "  ${4:children=}",
+      "/>"
+    ],
+    "description": "Mantine NavLink"
+  },
+  "Mantine Pagination": {
+    "prefix": "mtPagination",
+    "body": [
+      "<Pagination total={${1:10}} value={${2:activePage}} onChange={${3:setActivePage}} ${4} />"
+    ],
+    "description": "Mantine Pagination"
+  },
+  "Mantine Tabs": {
+    "prefix": "mtTabs",
+    "body": [
+      "<Tabs defaultValue=\"${1:first}\">",
+      "  <Tabs.List>",
+      "    <Tabs.Tab value=\"${1:first}\">${2:First tab}</Tabs.Tab>",
+      "    <Tabs.Tab value=\"${3:second}\">${4:Second tab}</Tabs.Tab>",
+      "  </Tabs.List>",
+      "  <Tabs.Panel value=\"${1:first}\">${5:First panel content}</Tabs.Panel>",
+      "  <Tabs.Panel value=\"${3:second}\">${6:Second panel content}</Tabs.Panel>",
+      "</Tabs>"
+    ],
+    "description": "Mantine Tabs"
+  },
+  "Mantine Tabs With Icons": {
+    "prefix": "mtTabsIcons",
+    "body": [
+      "<Tabs defaultValue=\"${1:gallery}\">",
+      "  <Tabs.List>",
+      "    <Tabs.Tab value=\"${1:gallery}\" leftSection={<IconPhoto size={12} />}>${2:Gallery}</Tabs.Tab>",
+      "    <Tabs.Tab value=\"${3:messages}\" leftSection={<IconMessageCircle size={12} />}>${4:Messages}</Tabs.Tab>",
+      "    <Tabs.Tab value=\"${5:settings}\" leftSection={<IconSettings size={12} />}>${6:Settings}</Tabs.Tab>",
+      "  </Tabs.List>",
+      "  <Tabs.Panel value=\"${1:gallery}\">${7:Gallery content}</Tabs.Panel>",
+      "  <Tabs.Panel value=\"${3:messages}\">${8:Messages content}</Tabs.Panel>",
+      "  <Tabs.Panel value=\"${5:settings}\">${9:Settings content}</Tabs.Panel>",
+      "</Tabs>"
+    ],
+    "description": "Mantine Tabs with left sections"
+  },
+  "Mantine Tabs Controlled": {
+    "prefix": "mtTabsControlled",
+    "body": [
+      "<Tabs value={${1:activeTab}} onChange={${2:setActiveTab}}>",
+      "  <Tabs.List>",
+      "    <Tabs.Tab value=\"${3:first}\">${4:First tab}</Tabs.Tab>",
+      "    <Tabs.Tab value=\"${5:second}\">${6:Second tab}</Tabs.Tab>",
+      "  </Tabs.List>",
+      "  <Tabs.Panel value=\"${3:first}\">${7:First panel}</Tabs.Panel>",
+      "  <Tabs.Panel value=\"${5:second}\">${8:Second panel}</Tabs.Panel>",
+      "</Tabs>"
+    ],
+    "description": "Mantine Tabs controlled"
+  }
 }

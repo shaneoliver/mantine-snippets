@@ -1,3 +1,121 @@
 {
-  
+  "Mantine ActionIcon": {
+    "prefix": "mtActionIcon",
+    "body": [
+      "<ActionIcon aria-label=\"${1:Settings}\">",
+      "  $0",
+      "</ActionIcon>"
+    ],
+    "description": "Mantine ActionIcon – icon button"
+  },
+  "Mantine ActionIcon Gradient": {
+    "prefix": "mtActionIconGradient",
+    "body": [
+      "<ActionIcon",
+      "  variant=\"gradient\"",
+      "  size=\"xl\"",
+      "  aria-label=\"${1:Gradient action icon}\"",
+      "  gradient={{ from: '${2:cyan}', to: '${3:blue}', deg: ${4:90} }}",
+      ">",
+      "  $0",
+      "</ActionIcon>"
+    ],
+    "description": "Mantine ActionIcon with gradient"
+  },
+  "Mantine ActionIcon Loading": {
+    "prefix": "mtActionIconLoading",
+    "body": [
+      "<ActionIcon loading aria-label=\"${1:Loading}\">",
+      "  $0",
+      "</ActionIcon>"
+    ],
+    "description": "Mantine ActionIcon loading state"
+  },
+  "Mantine Button": {
+    "prefix": "mtButton",
+    "body": [
+      "<Button${1: variant=\"${2|default,filled,light,outline,subtle,gradient|}\"}>${3:Button}</Button>"
+    ],
+    "description": "Mantine Button"
+  },
+  "Mantine Button Full Width": {
+    "prefix": "mtButtonFullWidth",
+    "body": [
+      "<Button fullWidth>${1:Full width button}</Button>"
+    ],
+    "description": "Mantine Button full width"
+  },
+  "Mantine Button Left Section": {
+    "prefix": "mtButtonLeftSection",
+    "body": [
+      "<Button leftSection={${1:<IconPhoto size={14} />}} variant=\"default\">",
+      "  ${2:Gallery}",
+      "</Button>"
+    ],
+    "description": "Mantine Button with left section (icon)"
+  },
+  "Mantine Button Right Section": {
+    "prefix": "mtButtonRightSection",
+    "body": [
+      "<Button rightSection={${1:<IconDownload size={14} />}}>",
+      "  ${2:Download}",
+      "</Button>"
+    ],
+    "description": "Mantine Button with right section (icon)"
+  },
+  "Mantine Button Gradient": {
+    "prefix": "mtButtonGradient",
+    "body": [
+      "<Button",
+      "  variant=\"gradient\"",
+      "  gradient={{ from: '${1:cyan}', to: '${2:blue}', deg: ${3:90} }}",
+      ">",
+      "  ${4:Gradient button}",
+      "</Button>"
+    ],
+    "description": "Mantine Button gradient"
+  },
+  "Mantine Button Loading": {
+    "prefix": "mtButtonLoading",
+    "body": [
+      "<Button loading>${1:Loading button}</Button>"
+    ],
+    "description": "Mantine Button loading state"
+  },
+  "Mantine Button Disabled": {
+    "prefix": "mtButtonDisabled",
+    "body": [
+      "<Button disabled>${1:Disabled button}</Button>"
+    ],
+    "description": "Mantine Button disabled"
+  },
+  "Mantine CloseButton": {
+    "prefix": "mtCloseButton",
+    "body": [
+      "<CloseButton aria-label=\"${1:Close}\" />"
+    ],
+    "description": "Mantine CloseButton"
+  },
+  "Mantine CopyButton": {
+    "prefix": "mtCopyButton",
+    "body": [
+      "<CopyButton value=\"${1:text to copy}\">",
+      "  {({ copied, copy }) => (",
+      "    <Button color={copied ? 'teal' : 'blue'} onClick={copy}>",
+      "      {copied ? '${2:Copied}' : '${3:Copy}'}",
+      "    </Button>",
+      "  )}",
+      "</CopyButton>"
+    ],
+    "description": "Mantine CopyButton"
+  },
+  "Mantine FileButton": {
+    "prefix": "mtFileButton",
+    "body": [
+      "<FileButton onChange={${1:setFile}} accept=\"${2:image/png,image/jpeg}\">",
+      "  {(props) => <Button {...props}>${3:Upload image}</Button>}",
+      "</FileButton>"
+    ],
+    "description": "Mantine FileButton – open file picker"
+  }
 }

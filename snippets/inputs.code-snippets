@@ -1,3 +1,205 @@
 {
-    
+  "Mantine Autocomplete": {
+    "prefix": "mtAutocomplete",
+    "body": [
+      "<Autocomplete",
+      "  label=\"${1:Your favorite library}\"",
+      "  placeholder=\"${2:Pick value or enter anything}\"",
+      "  data={[${3:'React', 'Angular', 'Vue', 'Svelte'}]}",
+      "/>"
+    ],
+    "description": "Mantine Autocomplete"
+  },
+  "Mantine Checkbox": {
+    "prefix": "mtCheckbox",
+    "body": [
+      "<Checkbox label=\"${1:Label}\" description=\"${2:Description}\" ${3} />"
+    ],
+    "description": "Mantine Checkbox"
+  },
+  "Mantine Checkbox Group": {
+    "prefix": "mtCheckboxGroup",
+    "body": [
+      "<Checkbox.Group label=\"${1:Select items}\" description=\"${2:Description}\">",
+      "  <Stack mt=\"xs\">",
+      "    <Checkbox label=\"${3:Item 1}\" value=\"${4:1}\" />",
+      "    <Checkbox label=\"${5:Item 2}\" value=\"${6:2}\" />",
+      "  </Stack>",
+      "</Checkbox.Group>"
+    ],
+    "description": "Mantine Checkbox.Group"
+  },
+  "Mantine ColorInput": {
+    "prefix": "mtColorInput",
+    "body": [
+      "<ColorInput label=\"${1:Pick color}\" placeholder=\"${2:Input placeholder}\" ${3} />"
+    ],
+    "description": "Mantine ColorInput"
+  },
+  "Mantine NumberInput": {
+    "prefix": "mtNumberInput",
+    "body": [
+      "<NumberInput label=\"${1:Label}\" placeholder=\"${2:Placeholder}\" min={${3:0}} max={${4:100}} ${5} />"
+    ],
+    "description": "Mantine NumberInput"
+  },
+  "Mantine PasswordInput": {
+    "prefix": "mtPasswordInput",
+    "body": [
+      "<PasswordInput",
+      "  label=\"${1:Password}\"",
+      "  placeholder=\"${2:Your password}\"",
+      "  ${3}",
+      "/>"
+    ],
+    "description": "Mantine PasswordInput"
+  },
+  "Mantine PinInput": {
+    "prefix": "mtPinInput",
+    "body": [
+      "<PinInput length={${1:4}} ${2} />"
+    ],
+    "description": "Mantine PinInput"
+  },
+  "Mantine Radio": {
+    "prefix": "mtRadio",
+    "body": [
+      "<Radio label=\"${1:Label}\" description=\"${2:Description}\" value=\"${3:value}\" ${4} />"
+    ],
+    "description": "Mantine Radio"
+  },
+  "Mantine Radio Group": {
+    "prefix": "mtRadioGroup",
+    "body": [
+      "<Radio.Group label=\"${1:Select one}\" description=\"${2:Description}\">",
+      "  <Stack mt=\"xs\">",
+      "    <Radio label=\"${3:Option 1}\" value=\"${4:1}\" />",
+      "    <Radio label=\"${5:Option 2}\" value=\"${6:2}\" />",
+      "  </Stack>",
+      "</Radio.Group>"
+    ],
+    "description": "Mantine Radio.Group"
+  },
+  "Mantine Select": {
+    "prefix": "mtSelect",
+    "body": [
+      "<Select",
+      "  label=\"${1:Your favorite library}\"",
+      "  placeholder=\"${2:Pick value}\"",
+      "  data={[${3:'React', 'Angular', 'Vue', 'Svelte'}]}",
+      "  ${4:searchable}",
+      "/>"
+    ],
+    "description": "Mantine Select"
+  },
+  "Mantine Slider": {
+    "prefix": "mtSlider",
+    "body": [
+      "<Slider",
+      "  label=\"${1:Label}\"",
+      "  defaultValue={${2:50}}",
+      "  min={${3:0}}",
+      "  max={${4:100}}",
+      "  ${5}",
+      "/>"
+    ],
+    "description": "Mantine Slider"
+  },
+  "Mantine Switch": {
+    "prefix": "mtSwitch",
+    "body": [
+      "<Switch label=\"${1:Label}\" description=\"${2:Description}\" ${3} />"
+    ],
+    "description": "Mantine Switch"
+  },
+  "Mantine TagsInput": {
+    "prefix": "mtTagsInput",
+    "body": [
+      "<TagsInput",
+      "  label=\"${1:Tags}\"",
+      "  placeholder=\"${2:Enter tags}\"",
+      "  data={[${3}]}",
+      "  ${4}",
+      "/>"
+    ],
+    "description": "Mantine TagsInput"
+  },
+  "Mantine TextInput": {
+    "prefix": "mtTextInput",
+    "body": [
+      "<TextInput",
+      "  label=\"${1:Label}\"",
+      "  placeholder=\"${2:Input placeholder}\"",
+      "  ${3}",
+      "/>"
+    ],
+    "description": "Mantine TextInput"
+  },
+  "Mantine TextInput With Icon": {
+    "prefix": "mtTextInputIcon",
+    "body": [
+      "<TextInput",
+      "  leftSection={${1:<IconAt size={16} />}}",
+      "  leftSectionPointerEvents=\"none\"",
+      "  label=\"${2:Your email}\"",
+      "  placeholder=\"${3:Your email}\"",
+      "/>"
+    ],
+    "description": "Mantine TextInput with left section"
+  },
+  "Mantine Textarea": {
+    "prefix": "mtTextarea",
+    "body": [
+      "<Textarea",
+      "  label=\"${1:Label}\"",
+      "  placeholder=\"${2:Input placeholder}\"",
+      "  minRows={${3:2}}",
+      "  ${4}",
+      "/>"
+    ],
+    "description": "Mantine Textarea"
+  },
+  "Mantine Textarea Autosize": {
+    "prefix": "mtTextareaAutosize",
+    "body": [
+      "<Textarea",
+      "  label=\"${1:Label}\"",
+      "  placeholder=\"${2:Placeholder}\"",
+      "  autosize",
+      "  minRows={${3:2}}",
+      "  maxRows={${4:4}}",
+      "/>"
+    ],
+    "description": "Mantine Textarea autosize"
+  },
+  "Mantine FileInput": {
+    "prefix": "mtFileInput",
+    "body": [
+      "<FileInput label=\"${1:Upload files}\" placeholder=\"${2:Pick file}\" ${3} />"
+    ],
+    "description": "Mantine FileInput"
+  },
+  "Mantine NativeSelect": {
+    "prefix": "mtNativeSelect",
+    "body": [
+      "<NativeSelect",
+      "  label=\"${1:Label}\"",
+      "  data={[${2:'React', 'Vue', 'Angular', 'Svelte'}]}",
+      "  ${3}",
+      "/>"
+    ],
+    "description": "Mantine NativeSelect"
+  },
+  "Mantine MultiSelect": {
+    "prefix": "mtMultiSelect",
+    "body": [
+      "<MultiSelect",
+      "  label=\"${1:Label}\"",
+      "  placeholder=\"${2:Pick values}\"",
+      "  data={[${3:'React', 'Angular', 'Vue', 'Svelte'}]}",
+      "  ${4}",
+      "/>"
+    ],
+    "description": "Mantine MultiSelect"
+  }
 }

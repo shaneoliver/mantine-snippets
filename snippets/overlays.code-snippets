@@ -1,1 +1,128 @@
-{}
+{
+  "Mantine Dialog": {
+    "prefix": "mtDialog",
+    "body": [
+      "<Dialog opened={${1:opened}} withCloseButton onClose={${2:close}} size=\"lg\" radius=\"md\">",
+      "  ${3:Dialog content}",
+      "</Dialog>"
+    ],
+    "description": "Mantine Dialog"
+  },
+  "Mantine Drawer": {
+    "prefix": "mtDrawer",
+    "body": [
+      "<Drawer opened={${1:opened}} onClose={${2:close}} title=\"${3:Title}\">",
+      "  ${4:Drawer content}",
+      "</Drawer>"
+    ],
+    "description": "Mantine Drawer"
+  },
+  "Mantine Drawer Position": {
+    "prefix": "mtDrawerPosition",
+    "body": [
+      "<Drawer",
+      "  opened={${1:opened}}",
+      "  onClose={${2:close}}",
+      "  title=\"${3:Title}\"",
+      "  position=\"${4|left,right,top,bottom|}\"",
+      ">",
+      "  ${5:Content}",
+      "</Drawer>"
+    ],
+    "description": "Mantine Drawer with position"
+  },
+  "Mantine Menu": {
+    "prefix": "mtMenu",
+    "body": [
+      "<Menu shadow=\"md\" width={${1:200}}>",
+      "  <Menu.Target>",
+      "    <Button>${2:Toggle menu}</Button>",
+      "  </Menu.Target>",
+      "  <Menu.Dropdown>",
+      "    <Menu.Label>${3:Application}</Menu.Label>",
+      "    <Menu.Item>${4:Item 1}</Menu.Item>",
+      "    <Menu.Item>${5:Item 2}</Menu.Item>",
+      "    <Menu.Divider />",
+      "    <Menu.Item color=\"red\">${6:Danger}</Menu.Item>",
+      "  </Menu.Dropdown>",
+      "</Menu>"
+    ],
+    "description": "Mantine Menu"
+  },
+  "Mantine Menu Item": {
+    "prefix": "mtMenuItem",
+    "body": [
+      "<Menu.Item leftSection={${1}} ${2:color=\"red\"}>${3:Label}</Menu.Item>"
+    ],
+    "description": "Mantine Menu.Item"
+  },
+  "Mantine Modal": {
+    "prefix": "mtModal",
+    "body": [
+      "<Modal opened={${1:opened}} onClose={${2:close}} title=\"${3:Title}\">",
+      "  ${4:Modal content}",
+      "</Modal>"
+    ],
+    "description": "Mantine Modal"
+  },
+  "Mantine Modal Centered": {
+    "prefix": "mtModalCentered",
+    "body": [
+      "<Modal opened={${1:opened}} onClose={${2:close}} title=\"${3:Title}\" centered>",
+      "  ${4:Modal content}",
+      "</Modal>"
+    ],
+    "description": "Mantine Modal centered"
+  },
+  "Mantine Popover": {
+    "prefix": "mtPopover",
+    "body": [
+      "<Popover width={${1:200}} position=\"${2|bottom,top,left,right|}\" withArrow shadow=\"md\">",
+      "  <Popover.Target>",
+      "    <Button>${3:Toggle popover}</Button>",
+      "  </Popover.Target>",
+      "  <Popover.Dropdown>",
+      "    ${4:Popover content}",
+      "  </Popover.Dropdown>",
+      "</Popover>"
+    ],
+    "description": "Mantine Popover"
+  },
+  "Mantine Popover Trap Focus": {
+    "prefix": "mtPopoverTrapFocus",
+    "body": [
+      "<Popover width={${1:300}} trapFocus position=\"bottom\" withArrow shadow=\"md\">",
+      "  <Popover.Target>",
+      "    <Button>${2:Toggle}</Button>",
+      "  </Popover.Target>",
+      "  <Popover.Dropdown>",
+      "    ${3:Form or interactive content}",
+      "  </Popover.Dropdown>",
+      "</Popover>"
+    ],
+    "description": "Mantine Popover with focus trap"
+  },
+  "Mantine Tooltip": {
+    "prefix": "mtTooltip",
+    "body": [
+      "<Tooltip label=\"${1:Tooltip}\">",
+      "  <Button>${2:Button with tooltip}</Button>",
+      "</Tooltip>"
+    ],
+    "description": "Mantine Tooltip"
+  },
+  "Mantine HoverCard": {
+    "prefix": "mtHoverCard",
+    "body": [
+      "<HoverCard width={${1:280}} shadow=\"md\">",
+      "  <HoverCard.Target>",
+      "    ${2:Target element}",
+      "  </HoverCard.Target>",
+      "  <HoverCard.Dropdown>",
+      "    ${3:Hover content}",
+      "  </HoverCard.Dropdown>",
+      "</HoverCard>"
+    ],
+    "description": "Mantine HoverCard"
+  }
+}

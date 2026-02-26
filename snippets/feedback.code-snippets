@@ -1,1 +1,82 @@
-{}
+{
+  "Mantine Alert": {
+    "prefix": "mtAlert",
+    "body": [
+      "<Alert icon={${1:<IconInfoCircle />}} title=\"${2:Alert title}\" color=\"${3|blue,red,green,yellow|}\">",
+      "  ${4:Alert message}",
+      "</Alert>"
+    ],
+    "description": "Mantine Alert"
+  },
+  "Mantine Alert With Close": {
+    "prefix": "mtAlertWithClose",
+    "body": [
+      "<Alert title=\"${1:Alert title}\" withCloseButton closeButtonLabel=\"${2:Dismiss}\" onClose={${3:handleClose}}>",
+      "  ${4:Alert message}",
+      "</Alert>"
+    ],
+    "description": "Mantine Alert with close button"
+  },
+  "Mantine Loader": {
+    "prefix": "mtLoader",
+    "body": [
+      "<Loader ${1:type=\"${2|oval,bars,dots|}\"} ${3:size=\"${4|xs,sm,md,lg,xl|}\"} />"
+    ],
+    "description": "Mantine Loader"
+  },
+  "Mantine Loader Dots": {
+    "prefix": "mtLoaderDots",
+    "body": [
+      "<Loader type=\"dots\" />"
+    ],
+    "description": "Mantine Loader dots type"
+  },
+  "Mantine Progress": {
+    "prefix": "mtProgress",
+    "body": [
+      "<Progress value={${1:50}} ${2:size=\"lg\"} />"
+    ],
+    "description": "Mantine Progress bar"
+  },
+  "Mantine Progress Compound": {
+    "prefix": "mtProgressCompound",
+    "body": [
+      "<Progress.Root size=\"xl\">",
+      "  <Progress.Section value={${1:35}} color=\"${2:cyan}\">",
+      "    <Progress.Label>${3:Section 1}</Progress.Label>",
+      "  </Progress.Section>",
+      "  <Progress.Section value={${4:28}} color=\"${5:pink}\">",
+      "    <Progress.Label>${6:Section 2}</Progress.Label>",
+      "  </Progress.Section>",
+      "</Progress.Root>"
+    ],
+    "description": "Mantine Progress with multiple sections"
+  },
+  "Mantine RingProgress": {
+    "prefix": "mtRingProgress",
+    "body": [
+      "<RingProgress",
+      "  label=\"${1:50%}\"",
+      "  sections={[",
+      "    { value: ${2:40}, color: '${3:cyan}' },",
+      "    { value: ${4:15}, color: '${5:orange}' },",
+      "  ]}",
+      "/>"
+    ],
+    "description": "Mantine RingProgress"
+  },
+  "Mantine Skeleton": {
+    "prefix": "mtSkeleton",
+    "body": [
+      "<Skeleton height={${1:50}} radius=\"${2|sm,md,xl|}\" ${3} />"
+    ],
+    "description": "Mantine Skeleton"
+  },
+  "Mantine LoadingOverlay": {
+    "prefix": "mtLoadingOverlay",
+    "body": [
+      "<LoadingOverlay visible={${1:true}} loaderProps={{ type: '${2|oval,bars,dots|}' }} />"
+    ],
+    "description": "Mantine LoadingOverlay"
+  }
+}

@@ -1,1 +1,123 @@
-{}
+{
+  "Mantine Avatar": {
+    "prefix": "mtAvatar",
+    "body": [
+      "<Avatar src=\"${1:avatar.png}\" alt=\"${2:Alt text}\" />"
+    ],
+    "description": "Mantine Avatar with image"
+  },
+  "Mantine Avatar Initials": {
+    "prefix": "mtAvatarInitials",
+    "body": [
+      "<Avatar color=\"${1|cyan,blue,initials|}\" radius=\"xl\">${2:MK}</Avatar>"
+    ],
+    "description": "Mantine Avatar with initials"
+  },
+  "Mantine Avatar Placeholder": {
+    "prefix": "mtAvatarPlaceholder",
+    "body": [
+      "<Avatar radius=\"xl\" color=\"${1:blue}\">",
+      "  $0",
+      "</Avatar>"
+    ],
+    "description": "Mantine Avatar with custom placeholder"
+  },
+  "Mantine Badge": {
+    "prefix": "mtBadge",
+    "body": [
+      "<Badge>${1:Badge}</Badge>"
+    ],
+    "description": "Mantine Badge"
+  },
+  "Mantine Badge Gradient": {
+    "prefix": "mtBadgeGradient",
+    "body": [
+      "<Badge",
+      "  size=\"xl\"",
+      "  variant=\"gradient\"",
+      "  gradient={{ from: '${1:cyan}', to: '${2:blue}', deg: ${3:90} }}",
+      ">",
+      "  ${4:Gradient badge}",
+      "</Badge>"
+    ],
+    "description": "Mantine Badge gradient"
+  },
+  "Mantine Card": {
+    "prefix": "mtCard",
+    "body": [
+      "<Card shadow=\"${1|sm,md,lg,xl|}\" padding=\"${2|lg,md,xl|}\" radius=\"${3|md,sm,lg|}\" withBorder>",
+      "  <Card.Section>",
+      "    $0",
+      "  </Card.Section>",
+      "  ${4:Card content}",
+      "</Card>"
+    ],
+    "description": "Mantine Card with section"
+  },
+  "Mantine Card Section": {
+    "prefix": "mtCardSection",
+    "body": [
+      "<Card padding=\"xl\">",
+      "  <Card.Section>${1:First section}</Card.Section>",
+      "  ${2:Content}",
+      "  <Card.Section>${3:Last section}</Card.Section>",
+      "</Card>"
+    ],
+    "description": "Mantine Card with multiple sections"
+  },
+  "Mantine Image": {
+    "prefix": "mtImage",
+    "body": [
+      "<Image",
+      "  src=\"${1:https://example.com/image.png}\"",
+      "  h={${2:160}}",
+      "  alt=\"${3:Alt text}\"",
+      "  radius=\"${4|sm,md,lg|}\"",
+      "/>"
+    ],
+    "description": "Mantine Image"
+  },
+  "Mantine Table": {
+    "prefix": "mtTable",
+    "body": [
+      "<Table>",
+      "  <Table.Thead>",
+      "    <Table.Tr>",
+      "      <Table.Th>${1:Header 1}</Table.Th>",
+      "      <Table.Th>${2:Header 2}</Table.Th>",
+      "    </Table.Tr>",
+      "  </Table.Thead>",
+      "  <Table.Tbody>",
+      "    $0",
+      "  </Table.Tbody>",
+      "</Table>"
+    ],
+    "description": "Mantine Table"
+  },
+  "Mantine Table Row": {
+    "prefix": "mtTableRow",
+    "body": [
+      "<Table.Tr key={${1:item.id}}>",
+      "  <Table.Td>${2:Cell 1}</Table.Td>",
+      "  <Table.Td>${3:Cell 2}</Table.Td>",
+      "</Table.Tr>"
+    ],
+    "description": "Mantine Table row"
+  },
+  "Mantine Table Data": {
+    "prefix": "mtTableData",
+    "body": [
+      "<Table data={${1:tableData}} />"
+    ],
+    "description": "Mantine Table with data prop"
+  },
+  "Mantine ThemeIcon": {
+    "prefix": "mtThemeIcon",
+    "body": [
+      "<ThemeIcon size=\"${1|xs,sm,md,lg,xl|}\" radius=\"${2|sm,md,lg,xl|}\" variant=\"${3|default,light,filled,outline|}\" color=\"${4:blue}\">",
+      "  $0",
+      "</ThemeIcon>"
+    ],
+    "description": "Mantine ThemeIcon"
+  }
+}

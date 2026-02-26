@@ -43,7 +43,7 @@
       "<Mark color=\"${1|blue,gray,red,green,yellow,cyan,grape,indigo,lime,orange,pink,teal,violet|}\">$2</Mark>"
     ],
     "description": "Mantine Mark"
-  }
+  },
   "Mantine Text Extra Small": {
     "prefix": "mtTextXs",
     "body": ["<Text size=\"xs\">${1:Extra small text}</Text>"],
@@ -147,5 +147,19 @@
     "prefix": "mtTextTruncate",
     "body": ["<Text truncate=\"${1|end,start|}\">$2</Text>"],
     "description": "Mantine Text Truncate"
+  },
+  "Mantine Title": {
+    "prefix": "mtTitle",
+    "body": [
+      "<Title order={${1|1,2,3,4,5,6|}}>${2:Heading}</Title>"
+    ],
+    "description": "Mantine Title (h1–h6)"
+  },
+  "Mantine Title With Size": {
+    "prefix": "mtTitleSize",
+    "body": [
+      "<Title order={${1:1}} size=\"${2|h1,h2,h3,h4,h5,h6|}\">${3:Heading}</Title>"
+    ],
+    "description": "Mantine Title with size"
   }
 }

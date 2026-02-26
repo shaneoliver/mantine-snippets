@@ -20,7 +20,7 @@
   "Mantine Divider": {
     "prefix": "mtDivider",
     "body": [
-      "<Divider $0 />",
+      "<Divider $0 />"
     ],
     "description": "Mantine Divider"
   },
@@ -29,7 +29,7 @@
     "body": [
       "<FocusTrap in={${1:active}} $2>",
       "  $0",
-      "</FocusTrap>",
+      "</FocusTrap>"
     ],
     "description": "Mantine FocusTrap"
   },
@@ -38,7 +38,7 @@
     "body": [
       "<Paper ${1:shadow=\"${2|xs,sm,md,lg,xl|}\"} ${3:radius=\"${4|sm,xs,md,lg,xl|}\"} ${5:border}>",
       "  $0",
-      "</Paper>",
+      "</Paper>"
     ],
     "description": "Mantine Paper"
   },
@@ -47,7 +47,7 @@
     "body": [
       "<Portal ${1:target=\"${2:#portal-container}\"}>",
       "  $0",
-      "</Portal>",
+      "</Portal>"
     ],
     "description": "Mantine Portal"
   },
@@ -56,15 +56,107 @@
     "body": [
       "<ScrollArea ${1:type=\"${2|hover,auto,always,scroll,never|}\"} ${3:offsetScrollbars} $4>",
       "  $0",
-      "</ScrollArea>",
+      "</ScrollArea>"
     ],
     "description": "Mantine ScrollArea"
   },
   "Mantine VisuallyHidden": {
     "prefix": "mtVisuallyHidden",
     "body": [
-      "<VisuallyHidden>$0</VisuallyHidden>",
+      "<VisuallyHidden>$0</VisuallyHidden>"
     ],
     "description": "Mantine VisuallyHidden"
+  },
+  "Mantine Accordion": {
+    "prefix": "mtAccordion",
+    "body": [
+      "<Accordion defaultValue=\"${1:item-1}\">",
+      "  <Accordion.Item value=\"${1:item-1}\">",
+      "    <Accordion.Control>${2:Control 1}</Accordion.Control>",
+      "    <Accordion.Panel>${3:Panel 1 content}</Accordion.Panel>",
+      "  </Accordion.Item>",
+      "  <Accordion.Item value=\"${4:item-2}\">",
+      "    <Accordion.Control>${5:Control 2}</Accordion.Control>",
+      "    <Accordion.Panel>${6:Panel 2 content}</Accordion.Panel>",
+      "  </Accordion.Item>",
+      "</Accordion>"
+    ],
+    "description": "Mantine Accordion"
+  },
+  "Mantine Accordion Item": {
+    "prefix": "mtAccordionItem",
+    "body": [
+      "<Accordion.Item value=\"${1:value}\">",
+      "  <Accordion.Control icon={${2}}>${3:Control}</Accordion.Control>",
+      "  <Accordion.Panel>${4:Panel content}</Accordion.Panel>",
+      "</Accordion.Item>"
+    ],
+    "description": "Mantine Accordion.Item"
+  },
+  "Mantine Affix": {
+    "prefix": "mtAffix",
+    "body": [
+      "<Affix position={{ ${1:bottom}: ${2:20}, ${3:right}: ${4:20} }}>",
+      "  ${5}",
+      "</Affix>"
+    ],
+    "description": "Mantine Affix – fixed position in portal"
+  },
+  "Mantine Anchor": {
+    "prefix": "mtAnchor",
+    "body": [
+      "<Anchor href=\"${1:https://mantine.dev}\" target=\"_blank\" ${2:underline=\"hover\"}>",
+      "  ${3:Link text}",
+      "</Anchor>"
+    ],
+    "description": "Mantine Anchor"
+  },
+  "Mantine Divider With Label": {
+    "prefix": "mtDividerLabel",
+    "body": [
+      "<Divider my=\"md\" label=\"${1:Label}\" labelPosition=\"${2|left,center,right|}\" />"
+    ],
+    "description": "Mantine Divider with label"
+  },
+  "Mantine Fieldset": {
+    "prefix": "mtFieldset",
+    "body": [
+      "<Fieldset legend=\"${1:Legend}\" variant=\"${2|default,filled|}\">",
+      "  ${3}",
+      "</Fieldset>"
+    ],
+    "description": "Mantine Fieldset"
+  },
+  "Mantine Stepper": {
+    "prefix": "mtStepper",
+    "body": [
+      "<Stepper active={${1:active}} onStepClick={${2:setActive}}>",
+      "  <Stepper.Step label=\"${3:First}\" description=\"${4:Description}\">${5:Step 1 content}</Stepper.Step>",
+      "  <Stepper.Step label=\"${6:Second}\" description=\"${7:Description}\">${8:Step 2 content}</Stepper.Step>",
+      "  <Stepper.Completed>${9:Completed content}</Stepper.Completed>",
+      "</Stepper>"
+    ],
+    "description": "Mantine Stepper"
+  },
+  "Mantine Timeline": {
+    "prefix": "mtTimeline",
+    "body": [
+      "<Timeline active={${1:1}} bulletSize={${2:24}} lineWidth={${3:2}}>",
+      "  <Timeline.Item title=\"${4:Title}\" bullet={${5}}>",
+      "    ${6:Content}",
+      "  </Timeline.Item>",
+      "  <Timeline.Item title=\"${7:Title}\">${8:Content}</Timeline.Item>",
+      "</Timeline>"
+    ],
+    "description": "Mantine Timeline"
+  },
+  "Mantine Transition": {
+    "prefix": "mtTransition",
+    "body": [
+      "<Transition mounted={${1:opened}} transition=\"${2|fade,slide-up,slide-down,pop|}\" duration={${3:200}}>",
+      "  {(styles) => <div style={styles}>${4}</div>}",
+      "</Transition>"
+    ],
+    "description": "Mantine Transition"
   }
 }
